@@ -31,7 +31,7 @@ defmodule TableFormatterTest do
   end
 
   test "coorect format string returned" do
-    assert TF.format_for([9, 10, 11]) == "~-9s / ~-10s / ~-11s~n"
+    assert TF.format_for([9, 10, 11]) == "~-9s | ~-10s | ~-11s~n"
   end
 
   test "Output is correct" do
@@ -41,12 +41,12 @@ defmodule TableFormatterTest do
       end)
 
     assert result == """
-           c1    / c2     / c4     
+           c1    | c2     | c4     
            ------+--------+--------
-           r1 c1 / r1 r2  / r1+++c4
-           r2 c1 / r2 r2  / r2 c4  
-           r3 c1 / r3 r2  / r3 c4  
-           r4 c1 / r4++r2 / r4 c4  
+           r1 c1 | r1 r2  | r1+++c4
+           r2 c1 | r2 r2  | r2 c4  
+           r3 c1 | r3 r2  | r3 c4  
+           r4 c1 | r4++r2 | r4 c4  
            """
   end
 end
