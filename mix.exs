@@ -29,7 +29,8 @@ defmodule Issues.MixProject do
       {:httpoison, "~> 1.8"},
       {:poison, "~> 4.0"},
       {:ex_doc, "~> 0.24", only: :dev, runtime: false},
-      {:earmark, "~> 1.4"}
+      {:earmark, "~> 1.4"},
+      {:exvcr, "~> 0.11", only: :test}
     ]
   end
 
