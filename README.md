@@ -1,6 +1,14 @@
 # Issues
 
-**TODO: Add description**
+A CLI study project that fetches Github repository issues.
+
+## Usage
+
+```bash
+cd cloned_project
+./issues elixir-lang elixir # ./issues <user> <project> <count | 4>
+./issues help # for commands information
+```
 
 ## Installation
 
@@ -18,4 +26,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/issues](https://hexdocs.pm/issues).
-
